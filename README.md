@@ -100,8 +100,6 @@ Returns paths to `target.wav` (isolated sound) and `residual.wav` (everything el
 | `SAM_MODEL` | `facebook/sam-audio-base` | Model to load (`small`, `base`, or `large`) |
 | `SAM_PORT` | `8765` | Server port |
 
-## FFmpeg Note
+## FFmpeg
 
-FFmpeg is only needed for **visual prompting** (video input). If you need it, install the full-shared build from [gyan.dev](https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full-shared.7z) and add its `/bin` folder to your system PATH. The static build installed by winget/choco will not work.
-
-Text prompt separation works without FFmpeg.
+FFmpeg is required. Install the full-shared build from [gyan.dev](https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full-shared.7z) and add its `/bin` folder to your system PATH. The static build installed by winget/choco will not work.

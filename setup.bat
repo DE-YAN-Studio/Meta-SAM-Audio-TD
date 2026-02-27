@@ -124,15 +124,12 @@ goto :done
 :: ============================================================
 echo.
 echo ========================================
-echo  FFmpeg note (only needed for VISUAL prompting):
+echo  FFmpeg is required:
 echo.
-echo  winget/choco ffmpeg builds are STATIC — torchcodec
-echo  cannot load them. For visual prompting, install the
-echo  full-shared build from gyan.dev and add its /bin
-echo  folder to your system PATH:
+echo  winget/choco ffmpeg builds are STATIC and will NOT work.
+echo  Install the full-shared build from gyan.dev and add its
+echo  /bin folder to your system PATH:
 echo    https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full-shared.7z
-echo.
-echo  Audio-only (text prompt) separation works without FFmpeg.
 echo ========================================
 echo.
 echo Setup complete! Run start_server.bat to launch the server.

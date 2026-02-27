@@ -28,7 +28,7 @@ start_server.bat # launches server on http://127.0.0.1:8765
 
 **system Python path:** uninstalls CPU-only torch before installing cu128 (pip treats `2.10.0` and `2.10.0+cpu` as the same version and skips the install without the explicit uninstall).
 
-**FFmpeg:** only needed for visual prompting (torchcodec). winget/choco install static builds that torchcodec cannot load. Use the full-shared build from gyan.dev if visual prompting is needed.
+**FFmpeg:** always required. winget/choco install static builds that do not work — install the full-shared build from gyan.dev and add its `/bin` folder to your system PATH: https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full-shared.7z
 
 **huggingface_hub ≥1.0 incompatibility:** `sam-audio/sam_audio/model/base.py` `_from_pretrained()` must have `proxies=None` and `resume_download=False` defaults, and these must be omitted from the `snapshot_download()` call.
 
