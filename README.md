@@ -35,7 +35,7 @@ Request model access at https://huggingface.co/facebook/sam-audio-base if you ha
 setup.bat
 ```
 
-Choose `[1]` for a conda environment (recommended) or `[2]` for system Python. The script installs PyTorch cu128, SAM-Audio, and the server dependencies.
+Choose `[1]` for a conda environment (recommended) or `[2]` for system Python. The script installs PyTorch cu128, FFmpeg (full-shared), SAM-Audio, and the server dependencies.
 
 **4. Start the server**
 
@@ -102,4 +102,6 @@ Returns paths to `target.wav` (isolated sound) and `residual.wav` (everything el
 
 ## FFmpeg
 
-FFmpeg is required. Install the full-shared build from [gyan.dev](https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full-shared.7z) and add its `/bin` folder to your system PATH. The static build installed by winget/choco will not work.
+FFmpeg (full-shared build) is required and is installed automatically by `setup.bat`.
+
+If you need to install it manually: download the full-shared build from [gyan.dev](https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full-shared.7z) and add its `/bin` folder to your system PATH. The static build installed by winget/choco will not work.
