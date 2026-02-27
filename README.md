@@ -17,8 +17,8 @@ A local FastAPI server loads the model and exposes an HTTP API. A Script DAT ins
 **1. Clone with submodules**
 
 ```bash
-git clone --recurse-submodules https://github.com/kampfz/SAM-TD.git
-cd SAM-TD
+git clone --recurse-submodules https://github.com/DE-YAN-Studio/Meta-SAM-Audio-TD.git
+cd Meta-SAM-Audio-TD
 ```
 
 **2. Authenticate with HuggingFace**

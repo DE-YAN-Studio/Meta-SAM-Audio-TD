@@ -8,11 +8,11 @@ A TouchDesigner integration for Meta's SAM-Audio (audio source separation model)
 
 ## Repo
 
-https://github.com/kampfz/Meta-SAM-Audio-TD
+https://github.com/DE-YAN-Studio/Meta-SAM-Audio-TD
 
 `sam-audio/` is a git submodule pointing to a patched fork (`kampfz/sam-audio`). Always clone with:
 ```bash
-git clone --recurse-submodules https://github.com/kampfz/Meta-SAM-Audio-TD.git
+git clone --recurse-submodules https://github.com/DE-YAN-Studio/Meta-SAM-Audio-TD.git
 ```
 
 ## Setup
