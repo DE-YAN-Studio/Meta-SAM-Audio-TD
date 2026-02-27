@@ -1,0 +1,15 @@
+# Runtime / setup
+.env_mode
+
+# Audio files
+audio/
+td/work/
+*.wav
+
+# Model checkpoints
+.checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo

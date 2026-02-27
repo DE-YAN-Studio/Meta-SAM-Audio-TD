@@ -1,0 +1,3 @@
+[submodule "sam-audio"]
+	path = sam-audio
+	url = https://github.com/kampfz/sam-audio.git
