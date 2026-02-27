@@ -6,6 +6,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A TouchDesigner integration for Meta's SAM-Audio (audio source separation model). A FastAPI server loads the model and exposes a local HTTP API; a Script DAT inside TouchDesigner calls the server to separate audio in the background.
 
+## Repo
+
+https://github.com/kampfz/Meta-SAM-Audio-TD
+
+`sam-audio/` is a git submodule pointing to a patched fork (`kampfz/sam-audio`). Always clone with:
+```bash
+git clone --recurse-submodules https://github.com/kampfz/Meta-SAM-Audio-TD.git
+```
+
 ## Setup
 
 ```bash
@@ -28,7 +37,7 @@ start_server.bat # launches server on http://127.0.0.1:8765
 ```
 server.py          FastAPI server — loads model on startup, exposes /health and /separate
 td/sam_client.py   Paste into a Script DAT in TouchDesigner
-sam-audio/         Cloned Meta repo (pip install . installs sam_audio package)
+sam-audio/         Git submodule (kampfz/sam-audio fork) — pip install . installs sam_audio package
 setup.bat          One-time environment setup (conda or system Python)
 start_server.bat   Starts the server using the env chosen during setup
 ```
